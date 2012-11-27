@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{39855240-1b3a-4e35-b5e6-51907ad8060b}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f039027c-24b8-459d-a163-fc66e65dfef9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{d9aa0d69-b901-43ef-a1e0-6fba825739ed}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\fps_images.fnt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Constants.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lodepng.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lodepng_bmp2png.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ScrollableZone.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TargetedTouchDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TextBox.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Dialog.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Encryption.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FileHandler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StringUtils.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Objects2dFactory.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Objects2dHandler.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MenuWithClickTime.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\PasswordTextBox.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Constants.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lodepng.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lodepng_bmp2png.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ScrollableZone.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TargetedTouchDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TextBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Dialog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Encryption.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FileHandler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StringUtils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Objects2dFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Objects2dHandler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\PasswordTextBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MenuWithClickTime.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

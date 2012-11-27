@@ -16,3 +16,45 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+
+#Other 
+*.dll
+*.lib
+*.so
+*.a
+
+
+/proj.win32/Debug.win32
+/proj.win32/zlib-1.2.7
+/3rdparty/CocosDenshion/proj.win32/Debug.win32
+/3rdparty/cocos2dx/proj.win32/Android/Debug
+/3rdparty/cocos2dx/proj.win32/Debug.win32
+/3rdparty/CocosDenshion/proj.win32/*.user
+/3rdparty/cocos2dx/proj.win32/*.user
+/3rdparty/AES/win32/Release.win32
+/3rdparty/AES/win32/Debug
+/3rdparty/AES/win32/Debug.win32
+/3rdparty/AES/win32/Release
+/proj.win32/Release.win32
+/3rdparty/AES/win32/AES.vcxproj.user

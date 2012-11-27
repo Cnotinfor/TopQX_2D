@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9103E8B-0471-4226-B15B-903B2F4AF532}</ProjectGuid>
+    <RootNamespace>TopQX_2D</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">$(Configuration).win32\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Android'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Android'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Android'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)TopQX_2D.tlb</TypeLibraryName>
+      <HeaderFileName>TopQX_2D.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>TopQX_2D_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TopQX_2D_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\3rdParty\AES\src;.;..\3rdparty\cocos2dx;..\3rdparty\cocos2dx\actions;..\3rdparty\cocos2dx\base_nodes;..\3rdparty\cocos2dx\cocoa;..\3rdparty\cocos2dx\effects;..\3rdparty\cocos2dx\include;..\3rdparty\cocos2dx\kazmath\include;..\3rdparty\cocos2dx\keypad_dispatcher;..\3rdparty\cocos2dx\label_nodes;..\3rdparty\cocos2dx\layers_scenes_transitions_nodes;..\3rdparty\cocos2dx\menu_nodes;..\3rdparty\cocos2dx\misc_nodes;..\3rdparty\cocos2dx\particle_nodes;..\3rdparty\cocos2dx\script_support;..\3rdparty\cocos2dx\shaders;..\3rdparty\cocos2dx\sprite_nodes;..\3rdparty\cocos2dx\support;..\3rdparty\cocos2dx\text_input_node;..\3rdparty\cocos2dx\textures;..\3rdparty\cocos2dx\tileMap_parallax_nodes;..\3rdparty\cocos2dx\touch_dispatcher;..\3rdparty\cocos2dx\platform;..\3rdparty\cocos2dx\platform\win32;..\3rdparty\cocos2dx\platform\third_party\win32;..\3rdparty\cocos2dx\platform\third_party\win32\OGLES;..\3rdparty\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q /S "..\TopQXResources\*.*" "$(OutDir)TopQXResources\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)TopQX_2D.tlb</TypeLibraryName>
+      <HeaderFileName>TopQX_2D.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>TopQX_2D_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TopQX_2D_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\3rdParty\AES\src;.;..\3rdparty\cocos2dx;..\3rdparty\cocos2dx\actions;..\3rdparty\cocos2dx\base_nodes;..\3rdparty\cocos2dx\cocoa;..\3rdparty\cocos2dx\effects;..\3rdparty\cocos2dx\include;..\3rdparty\cocos2dx\kazmath\include;..\3rdparty\cocos2dx\keypad_dispatcher;..\3rdparty\cocos2dx\label_nodes;..\3rdparty\cocos2dx\layers_scenes_transitions_nodes;..\3rdparty\cocos2dx\menu_nodes;..\3rdparty\cocos2dx\misc_nodes;..\3rdparty\cocos2dx\particle_nodes;..\3rdparty\cocos2dx\script_support;..\3rdparty\cocos2dx\shaders;..\3rdparty\cocos2dx\sprite_nodes;..\3rdparty\cocos2dx\support;..\3rdparty\cocos2dx\text_input_node;..\3rdparty\cocos2dx\textures;..\3rdparty\cocos2dx\tileMap_parallax_nodes;..\3rdparty\cocos2dx\touch_dispatcher;..\3rdparty\cocos2dx\platform;..\3rdparty\cocos2dx\platform\win32;..\3rdparty\cocos2dx\platform\third_party\win32;..\3rdparty\cocos2dx\platform\third_party\win32\OGLES;..\3rdparty\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q /S "..\Resources\*.*" "$(OutDir)Resources\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)TopQX_2D.tlb</TypeLibraryName>
+      <HeaderFileName>TopQX_2D.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>TopQX_2D_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TopQX_2D_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rdParty\AES\src;.;..\3rdparty\cocos2dx;..\3rdparty\cocos2dx\actions;..\3rdparty\cocos2dx\base_nodes;..\3rdparty\cocos2dx\cocoa;..\3rdparty\cocos2dx\effects;..\3rdparty\cocos2dx\include;..\3rdparty\cocos2dx\kazmath\include;..\3rdparty\cocos2dx\keypad_dispatcher;..\3rdparty\cocos2dx\label_nodes;..\3rdparty\cocos2dx\layers_scenes_transitions_nodes;..\3rdparty\cocos2dx\menu_nodes;..\3rdparty\cocos2dx\misc_nodes;..\3rdparty\cocos2dx\particle_nodes;..\3rdparty\cocos2dx\script_support;..\3rdparty\cocos2dx\shaders;..\3rdparty\cocos2dx\sprite_nodes;..\3rdparty\cocos2dx\support;..\3rdparty\cocos2dx\text_input_node;..\3rdparty\cocos2dx\textures;..\3rdparty\cocos2dx\tileMap_parallax_nodes;..\3rdparty\cocos2dx\touch_dispatcher;..\3rdparty\cocos2dx\platform;..\3rdparty\cocos2dx\platform\win32;..\3rdparty\cocos2dx\platform\third_party\win32;..\3rdparty\cocos2dx\platform\third_party\win32\OGLES;..\3rdparty\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libGLESv2.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q /S "..\Resources\*.*" "$(OutDir)Resources\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Android'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)TopQX_2D.tlb</TypeLibraryName>
+      <HeaderFileName>TopQX_2D.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>TopQX_2D_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TopQX_2D_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\3rdParty\AES\src;.;..\3rdparty\cocos2dx;..\3rdparty\cocos2dx\actions;..\3rdparty\cocos2dx\base_nodes;..\3rdparty\cocos2dx\cocoa;..\3rdparty\cocos2dx\effects;..\3rdparty\cocos2dx\include;..\3rdparty\cocos2dx\kazmath\include;..\3rdparty\cocos2dx\keypad_dispatcher;..\3rdparty\cocos2dx\label_nodes;..\3rdparty\cocos2dx\layers_scenes_transitions_nodes;..\3rdparty\cocos2dx\menu_nodes;..\3rdparty\cocos2dx\misc_nodes;..\3rdparty\cocos2dx\particle_nodes;..\3rdparty\cocos2dx\script_support;..\3rdparty\cocos2dx\shaders;..\3rdparty\cocos2dx\sprite_nodes;..\3rdparty\cocos2dx\support;..\3rdparty\cocos2dx\text_input_node;..\3rdparty\cocos2dx\textures;..\3rdparty\cocos2dx\tileMap_parallax_nodes;..\3rdparty\cocos2dx\touch_dispatcher;..\3rdparty\cocos2dx\platform;..\3rdparty\cocos2dx\platform\win32;..\3rdparty\cocos2dx\platform\third_party\win32;..\3rdparty\cocos2dx\platform\third_party\win32\OGLES;..\3rdparty\CocosDenshion\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libGLESv2.lib;libBox2d.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q /S "..\Resources\*.*" "$(OutDir)Resources\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resources\fps_images.fnt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Constants.cpp" />
+    <ClCompile Include="..\src\Dialog.cpp" />
+    <ClCompile Include="..\src\Encryption.cpp" />
+    <ClCompile Include="..\src\FileHandler.cpp" />
+    <ClCompile Include="..\src\lodepng.cpp" />
+    <ClCompile Include="..\src\lodepng_bmp2png.cpp" />
+    <ClCompile Include="..\src\MenuWithClickTime.cpp" />
+    <ClCompile Include="..\src\Objects2dFactory.cpp" />
+    <ClCompile Include="..\src\Objects2dHandler.cpp" />
+    <ClCompile Include="..\src\PasswordTextBox.cpp" />
+    <ClCompile Include="..\src\ScrollableZone.cpp" />
+    <ClCompile Include="..\src\Stdafx.cpp" />
+    <ClCompile Include="..\src\StringUtils.cpp" />
+    <ClCompile Include="..\src\TargetedTouchDelegate.cpp" />
+    <ClCompile Include="..\src\TextBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Constants.h" />
+    <ClInclude Include="..\src\Dialog.h" />
+    <ClInclude Include="..\src\Encryption.h" />
+    <ClInclude Include="..\src\FileHandler.h" />
+    <ClInclude Include="..\src\lodepng.h" />
+    <ClInclude Include="..\src\lodepng_bmp2png.h" />
+    <ClInclude Include="..\src\MenuWithClickTime.h" />
+    <ClInclude Include="..\src\Objects2dFactory.h" />
+    <ClInclude Include="..\src\Objects2dHandler.h" />
+    <ClInclude Include="..\src\PasswordTextBox.h" />
+    <ClInclude Include="..\src\ScrollableZone.h" />
+    <ClInclude Include="..\src\Stdafx.h" />
+    <ClInclude Include="..\src\StringUtils.h" />
+    <ClInclude Include="..\src\TargetedTouchDelegate.h" />
+    <ClInclude Include="..\src\TextBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3rdparty\AES\win32\AES.vcxproj">
+      <Project>{700f2043-721f-4068-9785-7ac566c52659}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
